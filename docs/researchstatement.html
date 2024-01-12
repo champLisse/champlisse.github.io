@@ -6,8 +6,10 @@
 -->
 <html>
 	<head>
-		<script type="text/javascript" src="http://math.etsu.edu/LaTeXMathML/LaTeXMathML.js"></script>
-		<link rel="stylesheet" type="text/css" href="http://math.etsu.edu/LaTeXMathML/LaTeXMathML.standardarticle.css" />
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script type="text/javascript" id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+		</script>
 		<title>Research Statement - Lisanne Taams</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -41,14 +43,14 @@
 									Stacky curves have been around implicitly in the literature for a long time,
 									but the stacky language is sometimes avoided. Some notable applications of stacky curves are:
 									Darmon 1997 uses stacky curves under the name of M-curves to upgrade Faltings Theorem
-									and give applications to the generalized Fermat equation $x^p + y^q = z^r$; Abramovich and Vistoli 2002
+									and give applications to the generalized Fermat equation \(x^p + y^q = z^r\); Abramovich and Vistoli 2002
 									use stacky curves to define a completion of the moduli stack of stable maps into a Deligne-Mumford stack;
 									and Voight and Zureick-Brown 2022 consider modular curves as stacky curves to compute the number of generators and
 									relations for rings of modular forms.</p>
 									<p>A central motivation to study vector bundles on stacky curves is to provide
 									a cleaner alternative to Mehta and Seshadri's theory of parabolic bundles.
 									Their main idea is to relate representations of the fundamental group of punctured Riemann surfaces
-									to vector bundles on the closed surface by introducing ``parabolic structures'' at the punctures,
+									to vector bundles on the closed surface by introducing "parabolic structures" at the punctures,
 									i.e. a flag and a real number for each step in the flag. In some sense stacky curves sit in between
 									the punctured surface and the closed surface, allowing us to approximate parabolic bundles by vector
 									bundles on stacky curves. Concretely, moduli spaces of parabolic bundles are isomorphic to moduli spaces
@@ -56,11 +58,11 @@
 									<h2>Current work</h2>
 									<p>My PhD thesis consists of the following three projects.</p>
 									<h3>Uniformisation of spherical stacky curves</h3>
-									<p>Stacky curves come with a genus, which is a rational number $g \geq 0$. Classically curves fall into
-									three groups, the spherical curves with $g = 0$, flat curves with $g = 1$ and hyperbolic curves with
-									$g \geq 2$, which all exhibit very different behaviour and are often studied separately. A similar trichotomy
-									exists for stacky curves, where we should consider the spherical case $g < 1$, the flat case $g = 1$
-									and the hyperbolic case $g > 1$. The literature on hyperbolic stacky curves is vast, on the other hand, the
+									<p>Stacky curves come with a genus, which is a rational number \(g \geq 0\). Classically curves fall into
+									three groups, the spherical curves with \(g = 0\), flat curves with \(g = 1\) and hyperbolic curves with
+									\(g \geq 2\), which all exhibit very different behaviour and are often studied separately. A similar trichotomy
+									exists for stacky curves, where we should consider the spherical case \(g < 1\), the flat case \(g = 1\)
+									and the hyperbolic case \(g > 1\). The literature on hyperbolic stacky curves is vast, on the other hand, the
 									spherical case is only really considered over the complex numbers, as for example by Behrend and Noohi 2006.
 									This might not seem like a problem since classically the spherical curves are not particularly interesting,
 									but in the stacky case there are many more spherical curves.</p>
@@ -68,12 +70,12 @@
 									can be explicitly uniformised. As a consequence I can state a McKay-type correspondence between stacky curves
 									and the finite Dynkin diagrams. This generalizes a result of Geigle and Lenzing 1987, which works over algebraically
 									closed fields and thus only observes the simply laced Dynkin diagrams. Another application is to classify the
-									finite subgroups of ${PGL}_2(k)$ for an arbitrary field $k$, by carefully analysing the map
-									sending a group $G \subset {PGL}_2(k)$ to the stacky curve $[{P}_k^1/G]$. This gives an
+									finite subgroups of \(\operatorname{PGL}_2(k)\) for an arbitrary field \(k\), by carefully analysing the map
+									sending a group \(G \subset \operatorname{PGL}_2(k)\) to the stacky curve \([\mathbb{P}_k^1/G]\). This gives an
 									alternative geometric proof of the results of Beauville 2010.</p>
 									<h3>Formulas for motives of stacks of sheaves on stacky curves</h3>									
 									<p>There is a long history of computing invariants of moduli spaces of vector bundles on a curve and closely
-									related moduli spaces. Initially Harder and Narasimhan 1974/75 compute $\ell$-adic cohomology groups by point
+									related moduli spaces. Initially Harder and Narasimhan 1974/75 compute \(\ell\)-adic cohomology groups by point
 									counting over finite fields. Later Atiyah and Bott 1983 give a differential geometric computation of the singular
 									cohomology. Recently Hoskins and Pepin Lehalleur 2021 prove a formula for the Voevodsky motive of the stack of vector
 									bundles on a curve, using moduli theoretic techniques.</p>
@@ -95,14 +97,14 @@
 									bundles on a curve.</p>
 									<h2>Future work</h2>
 									<h3>Stability after pushforward</h3>									
-									<p>Beauville 2000 conjectured that for a map of curves $C \rightarrow D$, where the target has genus
-									$\geq 2$, the generic stable bundle remains stable after pushforward and he proves this for étale
+									<p>Beauville 2000 conjectured that for a map of curves \(C \rightarrow D\), where the target has genus
+									\(\geq 2\), the generic stable bundle remains stable after pushforward and he proves this for étale
 									morphisms.</p>
-									<p>It is a general fact that any map of curves factors as $C \rightarrow \mathcal{X} \rightarrow D$, where
-									$\mathcal{X}$ is a stacky curve, $C \rightarrow \mathcal{X}$ is étale and $\mathcal{X} \rightarrow D$ is a
-									degree $1$ ramified morphism. We can show that for a specific notion of stability the generic bundle remains
-									stable when pushing forward along $C \rightarrow \mathcal{X}$ and, for a different notion of stability, a
-									bundle is stable on $\mathcal{X}$ if and only if it is when pushing forward to $D$. Together with D. Weissman
+									<p>It is a general fact that any map of curves factors as \(C \rightarrow \mathcal{X} \rightarrow D\), where
+									\(\mathcal{X}\) is a stacky curve, \(C \rightarrow \mathcal{X}\) is étale and \(\mathcal{X} \rightarrow D\) is a
+									degree \(1\) ramified morphism. We can show that for a specific notion of stability the generic bundle remains
+									stable when pushing forward along \(C \rightarrow \mathcal{X}\) and, for a different notion of stability, a
+									bundle is stable on \(\mathcal{X}\) if and only if it is when pushing forward to \(D\). Together with D. Weissman
 									we intend to use the theory of variation of stability to relate these two different notions of stability and
 									prove Beauville's conjecture.</p>
 									<h3>A geometric description of Campana points</h3>
